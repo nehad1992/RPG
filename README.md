@@ -5,10 +5,17 @@
 _The purpose of this application is to provide a fantasy RPG game with dynamic character selection, combat, and progression._
 
 ## Specs
-* _Spec: The application should be able to make a character object_
+* _Spec: The application should be able to make a character object._
   * Input: Create Character
   * Output: Return Character
 
+* _Spec: The application should be able to make a character object with the vitality, intelligence, and strength specified._
+  * Input: new Character(2,2,2)
+  * Output: Character with vitality, intelligence, and strength of 2
+
+* _Spec: The application should be able to make a level object_
+  * Input: Create Level
+  * Output: Return Level
 
 ## Setup/Installation Requirements
 _Clone this repository._
