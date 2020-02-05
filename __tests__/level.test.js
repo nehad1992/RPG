@@ -36,6 +36,6 @@ describe('Level', () => {
         let firstLevel =  new Level(levelId, experience);
         
         let experienceFromLevelObject = firstLevel.getExperience();
-        expect(experience).toEqual(0);
+        expect(experience).toEqual(experienceFromLevelObject);
       });
   });
