@@ -19,16 +19,19 @@ export class Character {
 
   setCurrentExperience(currentExperience) {
     this.currentExperience = currentExperience;
+    this.checkLevel();
   }
 
   checkLevel() {
     if(this.currentExperience >= this.level.experience) {
       this.setLevel();
+      console.log(this.level.id);
+      this.checkLevel();
     }
   }
-  // setLevel() {
-  //   this.level = this.level.changeLevel();
-  // }
+  setLevel() {
+    this.level = this.level.changeLevel();
+  }
 }
 
 //Another class that is type. type is going to have different weapons and maybe 
