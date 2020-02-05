@@ -34,7 +34,7 @@ describe('Character', () => {
     let levelIdFromCharacterLevelObjectOnCharacterInitiation = character.level.id;
     let levelExperienceFromCharacterLevelObjectOnCharacterInitiation = character.level.experience;
     
-    expect(levelIdFromCharacterLevelObjectOnCharacterInitiation).toEqual(0);
+    expect(levelIdFromCharacterLevelObjectOnCharacterInitiation).toEqual(1);
     expect(levelExperienceFromCharacterLevelObjectOnCharacterInitiation).toEqual(100);
   });
 });
