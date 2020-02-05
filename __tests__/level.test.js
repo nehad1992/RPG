@@ -17,7 +17,7 @@ describe('Level', () => {
         
         let level = new Level(id, experience);
         let idFromLevelObject = level.id;
-        let experienceFromLevelObject = 0;
+        let experienceFromLevelObject = level.experience;
     
         expect(id).toEqual(idFromLevelObject);
         expect(experience).toEqual(experienceFromLevelObject);
