@@ -23,7 +23,7 @@ describe('Character', () => {
     expect(vitality).toEqual(vitalityFromCharacterObject);
     expect(intelligence).toEqual(intelligenceFromCharacterOject);
     expect(strength).toEqual(strengthFromCharacterObject);
-    expect(character.currentExperience).toEqual(100);
+    expect(character.currentExperience).toEqual(0);
   });
   test('The application should have a character start with a level object with the level id equal to 1 and the experience equal to 100', () => {
     let vitality = 5;
