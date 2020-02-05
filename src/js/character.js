@@ -14,13 +14,15 @@ export class Character {
     this.intelligence = intelligence;
     this.strength = strength;
     this.level = new Level(1, 100);
+    this.currentExperience = 0;
   }
-  checkLevel() {
-    if(this.currentExperience >= this.level.experience) {
-      this.level.changeLevel(this.level.id);
-      this.level = levels[this.level.id + 1];
-    }
-  }
+  
+  // checkLevel() {
+  //   if(this.currentExperience >= this.level.experience) {
+  //     this.level.changeLevel(this.level.id);
+  //     this.level = levels[this.level.id + 1];
+  //   }
+  // }
 }
 
 //Another class that is type. type is going to have different weapons and maybe 

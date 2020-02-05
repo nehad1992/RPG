@@ -9,7 +9,7 @@ _The purpose of this application is to provide a fantasy RPG game with dynamic c
   * Input: Create Character
   * Output: Return Character
 
-* _Spec: The application should be able to make a character object with the specified vitality, intelligence, and strength._
+* _Spec: The application should be able to make a character object with the specified vitality, intelligence, and strength and the current experience should be equal to 0._
   * Input: new Character(2,2,2)
   * Output: Character with vitality, intelligence, and strength of 2
 
