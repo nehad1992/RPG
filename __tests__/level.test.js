@@ -28,7 +28,7 @@ describe('Level', () => {
         
         firstLevel = firstLevel.changeLevel(); 
 
-        expect(firstLevel.id).toEqual(1);
-        expect(firstLevel.experience).toEqual(100);
+        expect(firstLevel.id).toEqual(2);
+        expect(firstLevel.experience).toEqual(200);
       });
   });
