@@ -9,13 +9,17 @@ _The purpose of this application is to provide a fantasy RPG game with dynamic c
   * Input: Create Character
   * Output: Return Character
 
-* _Spec: The application should be able to make a character object with the vitality, intelligence, and strength specified._
+* _Spec: The application should be able to make a character object with the specified vitality, intelligence, and strength._
   * Input: new Character(2,2,2)
   * Output: Character with vitality, intelligence, and strength of 2
 
 * _Spec: The application should be able to make a level object_
   * Input: Create Level
   * Output: Return Level
+
+* _Spec: The application should be able to persist the id and experience to a level object_
+  * Input: new Level(0,100)
+  * Output: Return Level with id equal to 0 and experience equal to 100
 
 ## Setup/Installation Requirements
 _Clone this repository._
