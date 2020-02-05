@@ -3,11 +3,9 @@ export class Level {
     this.id = id;
     this.experience = experience;
   }
-  // changeLevel(levelNumber) {
-  //   let experience = levelNumber * 2;
-  //   let newLevel = new Level(levelNumber + 1, experience)
-  // }
-  // getExperience() {
-  //   return this.experience;
-  // }
+  changeLevel() {
+    let experience = this.experience * 2;
+    let newLevel = new Level(this.id + 1, experience);
+    return newLevel;
+  }
 }

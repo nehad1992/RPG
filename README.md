@@ -18,8 +18,12 @@ _The purpose of this application is to provide a fantasy RPG game with dynamic c
   * Output: Return Level
 
 * _Spec: The application should be able to persist the id and experience to a level object_
-  * Input: new Level(0,100)
-  * Output: Return Level with id equal to 0 and experience equal to 100
+  * Input: new Level(1,100)
+  * Output: Return Level with id equal to 1 and experience equal to 100
+
+* _Spec: The application should be able to change a levels id and experience when the level is increased_
+  * Input: Level is is increased from 1 with 100 experience to level 2
+  * Output: Level is 2 with 200 experience
 
 ## Setup/Installation Requirements
 _Clone this repository._
