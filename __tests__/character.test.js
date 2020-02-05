@@ -6,7 +6,7 @@ describe('Character', () => {
     let vitality = 5;
     let strength = 5;
     let intelligence = 10;
-    let character = new Object(vitality, intelligence, strength);
+    let character = new Character(vitality, intelligence, strength);
     expect(character instanceof Character).toEqual(true);
   });
 });
