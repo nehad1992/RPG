@@ -20,12 +20,14 @@ export class Character {
   setCurrentExperience(currentExperience) {
     this.currentExperience = currentExperience;
   }
-  
-  // checkLevel() {
-  //   if(this.currentExperience >= this.level.experience) {
-  //     this.level.changeLevel(this.level.id);
-  //     this.level = levels[this.level.id + 1];
-  //   }
+
+  checkLevel() {
+    if(this.currentExperience >= this.level.experience) {
+      this.setLevel();
+    }
+  }
+  // setLevel() {
+  //   this.level = this.level.changeLevel();
   // }
 }
 

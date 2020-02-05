@@ -51,4 +51,19 @@ describe('Character', () => {
 
     expect(newCurrentExperience).toEqual(characterCurrentExperienceAfterSettingNewValue);
   });
+//   test('The characters level should change if after checking the current experience, the current experience is more than the level experience value', () => {
+//     let vitality = 5;
+//     let intelligence = 10;
+//     let strength = 5;
+
+//     let character = new Character(vitality, intelligence, strength);
+
+//     let newCurrentExperience = 150;
+//     character.setCurrentExperience(newCurrentExperience);
+//     // let characterCurrentExperienceAfterSettingNewValue = character.currentExperience;
+//     character.checkLevel();
+    
+//     expect(character.currentExperience).toEqual(0);
+//     expect(character.level.id).toEqual(2);
+//   });
 });

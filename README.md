@@ -29,6 +29,10 @@ _The purpose of this application is to provide a fantasy RPG game with dynamic c
   * Input: Create Character
   * Output: Level equal to 1, Experience equal to 100
 
+* _Spec: The application should be able to change the current experience of the character._
+  * Input: Create Character and change experience to 50
+  * Output: Characters current experience should be 50
+
 ## Setup/Installation Requirements
 _Clone this repository._
 

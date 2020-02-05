@@ -27,8 +27,15 @@ describe('Level', () => {
         let firstLevel =  new Level(levelId, experience);
         
         firstLevel = firstLevel.changeLevel(); 
-
-        expect(firstLevel.id).toEqual(2);
         expect(firstLevel.experience).toEqual(200);
+        expect(firstLevel.id).toEqual(2);
+      });
+      test('should be able to change experience with change in level number', () => {
+        let levelId = 1;
+        let experience = 100 ;
+        let firstLevel =  new Level(levelId, experience);
+        
+        let experienceFromLevelObject = firstLevel.getExperience();
+        expect(experience).toEqual(0);
       });
   });
