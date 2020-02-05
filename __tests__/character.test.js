@@ -49,6 +49,6 @@ describe('Character', () => {
     character.setCurrentExperience(newCurrentExperience);
     let characterCurrentExperienceAfterSettingNewValue = character.currentExperience;
 
-    expect(newCurrentExperience).toEqual(0);
+    expect(newCurrentExperience).toEqual(characterCurrentExperienceAfterSettingNewValue);
   });
 });
