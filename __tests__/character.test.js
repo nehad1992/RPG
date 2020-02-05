@@ -15,7 +15,7 @@ describe('Character', () => {
     let intelligence = 10;
     let strength = 5;
     
-    let character = new Character(2,2,2);
+    let character = new Character(vitality, intelligence, strength);
     let vitalityFromCharacterObject = character.vitality;
     let intelligenceFromCharacterOject = character.intelligence;
     let strengthFromCharacterObject = character.strength;
