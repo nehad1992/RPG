@@ -16,6 +16,10 @@ export class Character {
     this.level = new Level(1, 100);
     this.currentExperience = 0;
   }
+
+  setCurrentExperience(currentExperience) {
+    this.currentExperience = currentExperience;
+  }
   
   // checkLevel() {
   //   if(this.currentExperience >= this.level.experience) {

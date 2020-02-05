@@ -38,4 +38,17 @@ describe('Character', () => {
     expect(levelIdFromCharacterLevelObjectOnCharacterInitiation).toEqual(1);
     expect(levelExperienceFromCharacterLevelObjectOnCharacterInitiation).toEqual(100);
   });
+  test('The characters current experience should be able to be set to a different value', () => {
+    let vitality = 5;
+    let intelligence = 10;
+    let strength = 5;
+
+    let character = new Character(vitality, intelligence, strength);
+
+    let newCurrentExperience = 200;
+    character.setCurrentExperience(newCurrentExperience);
+    let characterCurrentExperienceAfterSettingNewValue = character.currentExperience;
+
+    expect(newCurrentExperience).toEqual(0);
+  });
 });
