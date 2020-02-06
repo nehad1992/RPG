@@ -1,20 +1,17 @@
 import { Level } from "./level";
-
-//Vitality - 
-//Health - current health
-//Intelligence
-//Strength
-//Experience
-//Mana
-//import { Level } from './../level.js'
+import { Type } from "./type";
+import { Item } from "./item";
 
 export class Character {
-  constructor(vitality, intelligence, strength) {
+  constructor(vitality, intelligence, strength, typeofChar) {
+    this.type = typeofChar;
+    this.skills = typeofChar.skills;
     this.vitality = vitality;
     this.intelligence = intelligence;
     this.strength = strength;
     this.level = new Level(1, 100);
     this.currentExperience = 0;
+    this.item;
   }
 
   setCurrentExperience(currentExperience) {
@@ -25,12 +22,44 @@ export class Character {
   checkLevel() {
     if(this.currentExperience >= this.level.experience) {
       this.setLevel();
-      console.log(this.level.id);
       this.checkLevel();
     }
   }
   setLevel() {
     this.level = this.level.changeLevel();
+    this.increaseAttributes();
+  }
+
+  increaseAttributes() {
+    this.vitality += this.type.getVitality();
+    this.strength += this.type.getStrength();
+    this.intelligence += this.type.getIntelligence();
+  }
+
+  setWeapon(weapon) {
+    this.item = weapon;
+    this.strength += this.item.getStrength();
+    this.intelligence += this.item.getIntelligence();
+  }
+
+  removeWeapons() {
+    this.item = new Item(0,0);
+  }
+
+  ableToUseWeapon(weapon) {
+    let requiredStr = weapon.getStrengthReq();
+    let requiredInt = weapon.getIntelligenceReq();
+    if((this.strength >= requiredStr) && (this.intelligence >= requiredInt)) {
+
+      //if user input is yes then
+      // if(userWantsToUseWeapon) {
+      //   this.item = weapon;
+      // } else {
+
+      // }
+    } else {
+
+    }
   }
 }
 
